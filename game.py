@@ -41,17 +41,15 @@ class Game:
         self.game_started = True
         self.score = 0
 
-    # Nesneleri başlangıç konumlarına sıfırla
         bird.actor.x = 900
         snail.actor.x = 900
         coin.x = 900
 
-        dino.actor.y = HEIGHT - 170  # Dino'nun zıplama durumunu sıfırla
+        dino.actor.y = HEIGHT - 170  
         dino.velocity_y = 0
         dino.is_jumping = False
         dino.is_crouching = False
 
-    # Müzik tekrar başlat
         if self.sound_on:
             self.start_music()
 
